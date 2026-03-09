@@ -1,3 +1,18 @@
+# --- Framework de Deep Learning (PyTorch con CUDA ) ---
+# Se usa --index-url para forzar a pip a buscar en el repositorio de PyTorch para CUDA 12.6.
+# Esto asegura que se instale una versión compatible con la GPU.
+--index-url https://download.pytorch.org/whl/cu126
+
+torch
+torchvision
+
+# --- Ecosistema de TensorFlow y Data Science ---
+# Se usa --extra-index-url para añadir PyPI (el repositorio estándar ) como fuente secundaria.
+--extra-index-url https://pypi.org/simple
+
+tensorflow
+tensorflow-datasets
+
 # Core scientific stack
 numpy>=1.24
 pandas>=2.0
@@ -8,10 +23,6 @@ Pillow>=10.0
 scipy>=1.11
 scikit-learn>=1.3
 
-# Deep learning
-torch>=2.0
-torchvision>=0.15
-
 # Approximate nearest-neighbour search
 faiss-cpu>=1.7.4  # or faiss-gpu for GPU systems
 
@@ -20,7 +31,7 @@ notebook>=7.0
 ipywidgets>=8.0
 
 # Optional: pose detection (Task 2)
-# mediapipe>=0.10
+mediapipe>=0.10
 
 # Optional: face recognition (Task 2)
-# facenet-pytorch>=2.5
+facenet-pytorch>=2.5

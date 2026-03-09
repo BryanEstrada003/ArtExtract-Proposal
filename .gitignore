@@ -6,6 +6,7 @@ __pycache__/
 /datasets
 /checkpoints
 /logs
+/opendata
 
 # C extensions
 *.so
